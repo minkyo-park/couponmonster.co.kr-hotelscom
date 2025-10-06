@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>호텔 가격 비교 - 최저가 호텔 찾기</title>
+    <meta name="description" content="호텔스닷컴과 다른 사이트의 호텔 가격을 비교하여 최저가를 찾으세요. 실시간 가격 비교로 최대 절약하세요.">
+    <meta name="keywords" content="호텔 가격 비교, 최저가 호텔, 가격 비교 사이트, 호텔 예약 비교, 할인 가격">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://couponmonster.co.kr/price-comparison.html">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "호텔 가격 비교 - 최저가 호텔 찾기",
+      "description": "호텔스닷컴과 다른 사이트의 호텔 가격을 비교하여 최저가를 찾으세요. 실시간 가격 비교로 최대 절약하세요.",
+      "url": "https://couponmonster.co.kr/price-comparison.html",
+      "inLanguage": "ko-KR",
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "호텔 가격 비교 도구",
+        "description": "다양한 호텔 예약 사이트의 가격을 비교하는 도구",
+        "itemListElement": [
+          {
+            "@type": "Organization",
+            "name": "호텔스닷컴",
+            "url": "https://hotels.com",
+            "description": "세계 최대 호텔 예약 사이트"
+          },
+          {
+            "@type": "Organization",
+            "name": "아고다",
+            "url": "https://agoda.com",
+            "description": "아시아 최대 호텔 예약 사이트"
+          },
+          {
+            "@type": "Organization",
+            "name": "부킹닷컴",
+            "url": "https://booking.com",
+            "description": "유럽 최대 호텔 예약 사이트"
+          }
+        ]
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "홈",
+            "item": "https://couponmonster.co.kr/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "가격 비교",
+            "item": "https://couponmonster.co.kr/price-comparison.html"
+          }
+        ]
+      }
+    }
+    </script>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://couponmonster.co.kr/price-comparison.html">
+    <meta property="og:title" content="호텔 가격 비교 - 최저가 호텔 찾기">
+    <meta property="og:description" content="호텔스닷컴과 다른 사이트의 호텔 가격을 비교하여 최저가를 찾으세요. 실시간 가격 비교로 최대 절약하세요.">
+    <meta property="og:image" content="https://couponmonster.co.kr/images/price-comparison-og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://couponmonster.co.kr/price-comparison.html">
+    <meta property="twitter:title" content="호텔 가격 비교 - 최저가 호텔 찾기">
+    <meta property="twitter:description" content="호텔스닷컴과 다른 사이트의 호텔 가격을 비교하여 최저가를 찾으세요. 실시간 가격 비교로 최대 절약하세요.">
+    <meta property="twitter:image" content="https://couponmonster.co.kr/images/price-comparison-og.jpg">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1><a href="index.html">호텔스닷컴 할인쿠폰</a></h1>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">홈</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="how-to-use.html" class="nav-link">사용방법</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="faq.html" class="nav-link">자주묻는 질문</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="price-comparison.html" class="nav-link active">가격 비교</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>호텔 가격 비교</h1>
+            <p>여러 사이트의 가격을 한눈에 비교하여 최저가를 찾으세요</p>
+        </div>
+    </section>
+
+    <!-- Price Comparison Tool -->
+    <section class="price-comparison-tool">
+        <div class="container">
+            <div class="comparison-form">
+                <h2>가격 비교 검색</h2>
+                <form id="price-comparison-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="destination">목적지</label>
+                            <input type="text" id="destination" placeholder="도시, 호텔명 또는 지역" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="check-in">체크인</label>
+                            <input type="date" id="check-in" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="check-out">체크아웃</label>
+                            <input type="date" id="check-out" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">인원</label>
+                            <select id="guests" required>
+                                <option value="1">1명</option>
+                                <option value="2" selected>2명</option>
+                                <option value="3">3명</option>
+                                <option value="4">4명</option>
+                                <option value="5+">5명 이상</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">가격 비교하기</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Results -->
+    <section class="comparison-results">
+        <div class="container">
+            <h2 class="section-title">가격 비교 결과</h2>
+            <div class="results-container" id="comparison-results">
+                <!-- 가격 비교 결과가 JavaScript로 동적으로 로드됩니다 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Trends -->
+    <section class="price-trends">
+        <div class="container">
+            <h2 class="section-title">가격 트렌드</h2>
+            <div class="trends-content">
+                <div class="trend-chart">
+                    <h3>인기 목적지 가격 변화</h3>
+                    <div class="chart-placeholder">
+                        <p>가격 변화 차트</p>
+                        <div class="chart-bars">
+                            <div class="bar" style="height: 60%;" data-month="1월"></div>
+                            <div class="bar" style="height: 80%;" data-month="2월"></div>
+                            <div class="bar" style="height: 100%;" data-month="3월"></div>
+                            <div class="bar" style="height: 70%;" data-month="4월"></div>
+                            <div class="bar" style="height: 90%;" data-month="5월"></div>
+                            <div class="bar" style="height: 120%;" data-month="6월"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trend-insights">
+                    <h3>가격 인사이트</h3>
+                    <div class="insight-item">
+                        <div class="insight-icon">📈</div>
+                        <div class="insight-content">
+                            <h4>여름 성수기 가격 상승</h4>
+                            <p>6월부터 8월까지는 여행 성수기로 가격이 평균 20% 상승합니다.</p>
+                        </div>
+                    </div>
+                    <div class="insight-item">
+                        <div class="insight-icon">📉</div>
+                        <div class="insight-content">
+                            <h4>조기 예약 할인</h4>
+                            <p>30일 전 예약 시 평균 15% 할인을 받을 수 있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="insight-item">
+                        <div class="insight-icon">💰</div>
+                        <div class="insight-content">
+                            <h4>주말 vs 평일</h4>
+                            <p>주말 예약 시 평일 대비 평균 25% 더 비쌉니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Money Saving Tips -->
+    <section class="money-saving-tips">
+        <div class="container">
+            <h2 class="section-title">가격 절약 팁</h2>
+            <div class="tips-grid">
+                <div class="tip-item">
+                    <div class="tip-icon">⏰</div>
+                    <h3>조기 예약</h3>
+                    <p>여행 2-3개월 전에 예약하면 최대 30% 할인을 받을 수 있습니다.</p>
+                </div>
+                <div class="tip-item">
+                    <div class="tip-icon">📅</div>
+                    <h3>유연한 날짜</h3>
+                    <p>여행 날짜를 1-2일 조정하면 평균 15% 절약할 수 있습니다.</p>
+                </div>
+                <div class="tip-item">
+                    <div class="tip-icon">🔍</div>
+                    <h3>여러 사이트 비교</h3>
+                    <p>최소 3개 이상의 사이트를 비교하여 최저가를 찾으세요.</p>
+                </div>
+                <div class="tip-item">
+                    <div class="tip-icon">💳</div>
+                    <h3>할인 쿠폰 활용</h3>
+                    <p>사이트별 할인 쿠폰을 활용하면 추가 10-20% 할인 가능합니다.</p>
+                </div>
+                <div class="tip-item">
+                    <div class="tip-icon">📱</div>
+                    <h3>모바일 앱 사용</h3>
+                    <p>모바일 앱에서는 추가 할인 혜택을 받을 수 있습니다.</p>
+                </div>
+                <div class="tip-item">
+                    <div class="tip-icon">🎯</div>
+                    <h3>멤버십 혜택</h3>
+                    <p>호텔 멤버십에 가입하면 누적 포인트와 추가 할인을 받을 수 있습니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Destinations -->
+    <section class="popular-destinations">
+        <div class="container">
+            <h2 class="section-title">인기 목적지 가격 비교</h2>
+            <div class="destinations-grid" id="popular-destinations">
+                <!-- 인기 목적지들이 JavaScript로 동적으로 로드됩니다 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Alert -->
+    <section class="price-alert">
+        <div class="container">
+            <div class="alert-content">
+                <h2>가격 알림 설정</h2>
+                <p>원하는 호텔의 가격이 떨어지면 알림을 받아보세요!</p>
+                <form class="alert-form" id="price-alert-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="호텔명 또는 지역" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" placeholder="목표 가격 (원)" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="이메일 주소" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">알림 설정하기</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>호텔스닷컴 할인쿠폰</h3>
+                    <p>전 세계 호텔 예약 시 최고의 할인을 받을 수 있도록 도와드립니다.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>빠른 링크</h4>
+                    <ul>
+                        <li><a href="index.html">홈</a></li>
+                        <li><a href="how-to-use.html">사용방법</a></li>
+                        <li><a href="faq.html">자주묻는 질문</a></li>
+                        <li><a href="price-comparison.html">가격 비교</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>고객 지원</h4>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="how-to-use.html">사용 가이드</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>연락처</h4>
+                    <p>이메일: info@couponmonster.co.kr</p>
+                    <p>전화: 1588-0000</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 호텔스닷컴 할인쿠폰. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

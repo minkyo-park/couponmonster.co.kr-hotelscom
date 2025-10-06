@@ -1,0 +1,46 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://couponmonster.co.kr/sitemap.xml
+
+# Disallow private directories and files
+Disallow: /admin/
+Disallow: /private/
+Disallow: /data/
+Disallow: /*.json$
+Disallow: /blog-template.html
+Disallow: /BLOG_TEMPLATE_GUIDE.md
+
+# Allow all important pages
+Allow: /index.html
+Allow: /how-to-use.html
+Allow: /faq.html
+Allow: /price-comparison.html
+
+# Specific bot instructions
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: NaverBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: DaumBot
+Allow: /
+Crawl-delay: 2
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
