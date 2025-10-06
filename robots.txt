@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://couponmonster.co.kr/sitemap.xml
+Sitemap: https://www.couponmonster.co.kr/sitemap.xml
 
 # Disallow private directories and files
 Disallow: /admin/
