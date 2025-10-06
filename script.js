@@ -477,9 +477,18 @@ function copyCouponCode(code) {
 
 // Use Coupon
 function useCoupon(code) {
-    // Redirect to Hotels.com with the coupon code
-    const hotelsUrl = `https://www.hotels.com/?coupon=${code}`;
-    window.open(hotelsUrl, '_blank');
+    // Redirect to affiliate links after copying coupon
+    const couponLinks = [
+        'http://app.ac/zqGXya283',
+        'http://app.ac/7qGXya263', 
+        'http://app.ac/kE6LvZS63',
+        'http://app.ac/CjMfxBa13',
+        'http://app.ac/z3reN4J63',
+        'http://app.ac/ttpiHQM73',
+        'http://app.ac/UtpiHQM73'
+    ];
+    const linkIndex = (code.length + code.charCodeAt(0)) % couponLinks.length;
+    window.open(couponLinks[linkIndex], '_blank');
 }
 
 // Initialize All Buttons
